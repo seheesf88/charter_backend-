@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 
 
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: ['http://localhost:3000', 'https://localhost:3000', 'http://myrestaurantlist.herokuapp.com', 'https://myrestaurantlist.herokuapp.com'],
   credentials: true,
   optionsSuccessStatus:200
 }
