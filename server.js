@@ -30,6 +30,6 @@ const restaurantController = require('./controllers/restaurantController');
 app.use('/api/v1/restaurant', restaurantController);
 
 
-app.listen(9000, () => {
+app.listen(process.env.PORT || 9000, () => {
   console.log('I am working, Charter!')
 })
